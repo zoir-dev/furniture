@@ -17,7 +17,7 @@ const Card = ({ c, i, href }: { c: { title: string, rate: number, much: number }
                     {rating(c.rate)}
                     <p className='text-[18px] text-[#114683]'>$ {c.much}</p>
                 </div>
-                <Image src='/basket.png' alt='basket img' width={36} height={31} className='cursor-pointer w-[40px]' onClick={() => { dispatch(addItem({ ...c, id: +i, img: `https://picsum.photos/24${i}` })), alert('Added to Basket') }} />
+                <Image src='/basket.png' alt='basket img' width={36} height={31} className='cursor-pointer w-[40px]' onClick={() => { dispatch(addItem({ ...c, id: +i, img: `https://picsum.photos/24${i}`, count: 0 })), alert('Added to Basket') }} />
             </div>
         </div>
     )

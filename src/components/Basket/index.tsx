@@ -36,11 +36,11 @@ const BasketC = () => {
                                     </Link>
                                     <div className="flex items-center gap-[6px] sm:gap-0">
                                         <Button variant="text" className="w-[50px] aspect-[5/4] border-[1px] flex items-center justify-center border-second rounded-[10px] cursor-pointer select-none text-[18px] smd:text-[20px] text-second md:scale-90
-                                    smd:scale-75 sm:scale-[60]  duration-500" onClick={() => dispatch(addItem(b))}>+</Button>
+                                    smd:scale-75 sm:scale-[60]  duration-500" placeholder='' onClick={() => dispatch(addItem(b))}>+</Button>
                                         <Button variant="text" className="w-[50px] aspect-[5/4] flex items-center justify-center border-[1px] border-second rounded-[10px] cursor-pointer select-none text-[18px] smd:text-[20px] text-second md:scale-90
-                                    smd:scale-75 sm:scale-[60] duration-500">{b.count}</Button>
+                                    smd:scale-75 sm:scale-[60] duration-500" placeholder=''>{b.count}</Button>
                                         <Button variant="text" className="w-[50px] aspect-[5/4] flex items-center justify-center border-[1px] border-second rounded-[10px] cursor-pointer select-none text-[18px] smd:text-[20px] text-second md:scale-90
-                                    smd:scale-75 sm:scale-[60] duration-500"  onClick={() => dispatch(removeItem(b))}>-</Button>
+                                    smd:scale-75 sm:scale-[60] duration-500" placeholder='' onClick={() => dispatch(removeItem(b))}>-</Button>
                                     </div>
                                     <p className='text-[22px] md:text-[20px] smd:text-[16px] font-bold text-[#114683]'>$ {b?.much}</p>
                                 </div>
@@ -72,7 +72,7 @@ const BasketC = () => {
             </Slide>
             <Slide direction="up" triggerOnce className="w-full text-center">
                 <Link href='/basket/payment'>
-                    <Button className="max-w-[784px] w-full bg-second active:scale-[0.97] text-[24px] shadow-xl md:text-[20px] smd:text-[16px] capitalize">Payment</Button>
+                    <Button className="max-w-[784px] w-full bg-second active:scale-[0.97] text-[24px] shadow-xl md:text-[20px] smd:text-[16px] capitalize" placeholder=''>Payment</Button>
                 </Link>
             </Slide>
         </div>

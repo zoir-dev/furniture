@@ -16,28 +16,28 @@ const PaymentC = () => {
                 <form className='flex flex-col gap-[25px] smd:gap-[15px] pt-[25px] smd:pt-[20px]'>
                     <div className='flex flex-col gap-[5px]'>
                         <label htmlFor="name">Card name</label>
-                        <Input id='name' variant='outlined' label='Name' />
+                        <Input id='name' variant='outlined' label='Name' crossOrigin={undefined} />
                     </div>
                     <div className='flex flex-col gap-[5px]'>
                         <label htmlFor="number">Card number</label>
-                        <Input id='number' label='Card number' />
+                        <Input id='number' label='Card number' crossOrigin={undefined} />
                     </div>
                     <div className='flex flex-col gap-[5px]'>
                         <label htmlFor="message">Message</label>
-                        <Input id='message' label='Message' />
+                        <Input id='message' label='Message' crossOrigin={undefined} />
                     </div>
                     <div className="flex justify-between gap-[15px] sm:flex-col">
                         <div className='flex flex-col gap-[5px]'>
                             <label htmlFor="message">Expiration date</label>
-                            <Input type="date" id='message' />
+                            <Input type="date" id='message' crossOrigin={undefined} />
                         </div>
                         <div className='flex flex-col gap-[5px]'>
                             <label htmlFor="cvv">Cvv</label>
-                            <Input id='cvv' label='****' />
+                            <Input id='cvv' label='****' crossOrigin={undefined} />
                         </div>
                     </div>
                 </form>
-                <Button className="w-full bg-second active:scale-[0.97] text-[20px] shadow-xl md:text-[18px] smd:text-[16px] capitalize">Pay now</Button>
+                <Button className="w-full bg-second active:scale-[0.97] text-[20px] shadow-xl md:text-[18px] smd:text-[16px] capitalize" placeholder=''>Pay now</Button>
             </div>
         </Slide>
     )

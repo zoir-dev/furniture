@@ -17,10 +17,10 @@ const Footer = () => {
                     <h5 className='font-bold text-[15px]'>Navigation</h5>
                     {
                         [{ href: '/', name: 'Home' }, { href: '/about', name: 'About' }, { id: 'categories', name: 'Categories' }, { id: 'testimonials', name: 'Testimonials' }, { 'href': '/contact', name: 'Contact' }].map(l => (
-                            l.id ? <Button variant='text' className='font-[500] !text-[13px] p-0 !bg-[transparent] capitalize' onClick={() => scrollTo(l.id)} key={l.href || l.id}>
+                            l.id ? <Button variant='text' className='font-[500] !text-[13px] p-0 !bg-[transparent] capitalize' onClick={() => scrollTo(l.id)} key={l.href || l.id} placeholder={undefined}>
                                 {l.name}
                             </Button> :
-                                <Link href={l.href} key={l.href} className={`text-[13px] duration-500 hover:text-main ${pathname === l.href && 'text-main font-bold'} `}>{l.name}</Link>
+                                <Link href={l.href || '/'} key={l.href} className={`text-[13px] duration-500 hover:text-main ${pathname === l.href && 'text-main font-bold'} `}>{l.name}</Link>
                         ))
                     }
                 </div>

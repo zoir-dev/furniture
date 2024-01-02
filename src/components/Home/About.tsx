@@ -14,7 +14,7 @@ const About = () => {
                         <p className='text-[18px] smd:text-[16px] sm:!text-[14px]'>Lorem ipsum dolor sit amet consectetur. Eu nulla elementum vulputate quam. Amet bibendum pellentesque molestie morbi nibh aliquam consectetur elit. Morbi in rutrum eu lectus sit a ipsum risus ultrices.Lorem ipsum dolor sit amet consectetur. Eu nulla elementum vulputate quam. Amet bibendum pellentesque molestie morbi nibh aliquam consectetur elit. Morbi in rutrum eu lectus sit a ipsum risus ultrices.</p>
                     </div>
                 </div>
-                <Button size='sm' className='text-[15px] active:scale-[0.97] bg-second w-[150px] h-[48px] smd:w-[120px] smd:h-[40px] smd:text-[14px]'>Read more</Button>
+                <Button size='sm' className='text-[15px] active:scale-[0.97] bg-second w-[150px] h-[48px] smd:w-[120px] smd:h-[40px] smd:text-[14px]' placeholder=''>Read more</Button>
             </div>
         </Slide>
     )

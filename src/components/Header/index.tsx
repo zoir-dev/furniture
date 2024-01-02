@@ -32,8 +32,8 @@ const Header = () => {
                         {
                             links.map(l => (
                                 <Link href={l.href} className={`${pathname === l.href && 'text-main font-bold'} hover:text-main duration-500 p-[5px]`} key={l.href}>{l.img ?
-                                    <div className={pathname === l.href && `bg-main rounded-[10px] px-[10px] py-[4px] box-content duration-500`}>
-                                        <Image src={l.img} alt='img' width={42} height={42} className={pathname === l.href && 'brightness-0 invert-[1]'} />
+                                    <div className={pathname === l.href ? `bg-main rounded-[10px] px-[10px] py-[4px] box-content duration-500` : ''}>
+                                        <Image src={l.img} alt='img' width={42} height={42} className={pathname === l.href ? 'brightness-0 invert-[1]' : ''} />
                                     </div>
                                     :
                                     l.name
@@ -48,7 +48,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <Drawer open={open} placement='right'>
+            <Drawer open={open} placement='right' placeholder=''>
                 <div className='flex flex-col justify-center gap-[5px] pt-[100px]'>
                     {
                         links.map(l => (

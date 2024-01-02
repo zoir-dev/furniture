@@ -25,9 +25,8 @@ const Subscribe = () => {
                                 className: "min-w-0 !border-none h-[50px] smd:h-[35px] "
                             }}
                             value={value}
-                            onChange={(e) => setValue(e.target.value)}
-                        />
-                        <Button size='sm' className='text-[15px] !absolute right-0 top-[11px] smd:top-[3px] smd:right-[-7px] rounded active:scale-[0.97] bg-second w-[150px] h-[48px] smd:w-[120px] smd:h-[40px] smd:text-[14px]' onClick={() => setValue('')}>Subscribe</Button>
+                            onChange={(e) => setValue(e.target.value)} crossOrigin={undefined} />
+                        <Button size='sm' className='text-[15px] !absolute right-0 top-[11px] smd:top-[3px] smd:right-[-7px] rounded active:scale-[0.97] bg-second w-[150px] h-[48px] smd:w-[120px] smd:h-[40px] smd:text-[14px]' onClick={() => setValue('')} placeholder={undefined}>Subscribe</Button>
                     </div>
                 </div>
             </div>

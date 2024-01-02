@@ -11,7 +11,7 @@ const Main = () => {
             <h1 className='text-main font-bold text-[60px] xl:text-[50px] lg:!text-[40px] md:!text-[30px] smd:!text-[28px]'>Lorem ipsum dolor</h1>
             <p className='text-[18px] max-w-[504px] md:text-[16px] smd:text-[14px] md:text-center'>Lorem ipsum dolor sit amet consectetur. Eu nulla elementum vulputate quam. Amet bibendum pellentesque molestie morbi nibh aliquam consectetur elit. Morbi in rutrum eu lectus sit a ipsum risus ultrices.</p>
           </div>
-          <Button size='sm' className='text-[15px] active:scale-[0.97] bg-second w-[150px] h-[48px] smd:w-[120px] smd:h-[40px] smd:text-[14px]'>Shop now</Button>
+          <Button size='sm' className='text-[15px] active:scale-[0.97] bg-second w-[150px] h-[48px] smd:w-[120px] smd:h-[40px] smd:text-[14px]' placeholder=''>Shop now</Button>
         </div>
         <Image src='/main.png' alt='Main img' width={477} height={318} className='max-w-full lg:w-[50%] md:min-w-[350px]
       sm:!w-full sm:!min-w-[300px]' />

@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface BasketItem {
     id: number;
-    name: string;
+    title: string;
     count: number;
     img: string,
     much: number

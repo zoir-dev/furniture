@@ -14,31 +14,27 @@ const ContactC = () => {
                         <form className='flex flex-col gap-[25px] smd:gap-[15px] pt-[25px] smd:pt-[20px]'>
                             <div className='flex flex-col gap-[5px]'>
                                 <label htmlFor="name">Name</label>
-                                <Input id='name' variant='outlined' label='Name' />
+                                <Input id='name' variant='outlined' label='Name' crossOrigin={undefined} />
                             </div>
                             <div className='flex flex-col gap-[5px]'>
                                 <label htmlFor="email">Email</label>
-                                <Input id='email' label='Email' />
+                                <Input id='email' label='Email' crossOrigin={undefined} />
                             </div>
                             <div className='flex flex-col gap-[5px]'>
                                 <label htmlFor="message">Message</label>
-                                <Input id='message' label='Message' />
+                                <Input id='message' label='Message' crossOrigin={undefined} />
                             </div>
                             <Checkbox
-                                label={
-                                    <p
-                                        variant="small"
-                                        color="gray"
-                                        className="flex items-center font-normal"
-                                    >
-                                        I agree the Terms
-                                    </p>
-                                }
-                                containerProps={{ className: "-ml-2.5" }}
-                            />
+                                color="gray"
+                                label={<p
+                                    className="flex items-center font-normal"
+                                >
+                                    I agree the Terms
+                                </p>}
+                                containerProps={{ className: "-ml-2.5" }} crossOrigin={undefined} />
                         </form>
                     </div>
-                    <Image src='/contact.png' width={459} height={537} className='w-full max-w-[459px]' />
+                    <Image src='/contact.png' alt='img' width={459} height={537} className='w-full max-w-[459px]' />
                 </div>
             </Slide>
             <div className='flex flex-wrap justify-between pb-[32px] smd:pb-[20px] gap-[25px] smd:justify-center smd:text-center'>
