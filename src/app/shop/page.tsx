@@ -52,8 +52,8 @@ const Shop = () => {
                     <div className="flex flex-wrap gap-[22px] justify-center pb-[60px] md:pb-[40px] smd:pb-[30px]">
                         {
                             filteredData().slice((page - 1) * 12, page * 12).map((d, index) => (
-                                <Slide direction="up" triggerOnce>
-                                    <Card c={d} i={index} key={index} href={'/shop/' + index} />
+                                <Slide direction="up" triggerOnce key={index}>
+                                    <Card c={d} i={index} href={'/shop/' + index} />
                                 </Slide>
                             ))
                         }
@@ -76,8 +76,8 @@ const Shop = () => {
                 <div className="flex flex-wrap gap-[22px] justify-center pb-[60px] md:pb-[40px] smd:pb-[30px] pt-[40px] md:pt-[30px] smd:pt-[20px]">
                     {
                         [...data, ...data].map((d, index) => (
-                            <Slide direction="up" triggerOnce>
-                                <Card c={d} i={index} key={index} href={'/shop/' + index} />
+                            <Slide direction="up" triggerOnce key={index}>
+                                <Card c={d} i={index} href={'/shop/' + index} />
                             </Slide>
                         ))
                     }

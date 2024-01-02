@@ -12,8 +12,8 @@ export const rating = (rate: number, w?: number) => {
 
     return (
         <div className="flex">
-            {array.map(a => (
-                <Image src={a} alt="star img" width={w ?? 14} height={w ?? 14} />
+            {array.map((a, index) => (
+                <Image src={a} alt="star img" width={w ?? 14} height={w ?? 14} key={index} />
             ))}
         </div>
     )

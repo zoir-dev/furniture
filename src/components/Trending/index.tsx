@@ -15,8 +15,8 @@ const Trending = () => {
                 <div className='w-[120%] ml-[-10%]'>
                     <Marquee loop={1} className='' autoFill pauseOnHover pauseOnClick>
                         {data.map((c, index) => (
-                            <div className='px-[20px] pt-[30px] pb-[50px] '>
-                                <Card c={c} i={index} key={index} href={`${'/shop/' + index}`} />
+                            <div className='px-[20px] pt-[30px] pb-[50px]' key={index}>
+                                <Card c={c} i={index} href={`${'/shop/' + index}`} />
                             </div>
                         ))}
                     </Marquee>

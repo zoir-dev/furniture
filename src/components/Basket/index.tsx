@@ -28,7 +28,7 @@ const BasketC = () => {
                 </Slide>
                 <div className="flex flex-col gap-[25px] md:gap-[20px] smd:gap-[15px] pt-[40px] md:pt-[30px] smd:pt-[20px]">
                     {baskets.map((b: any) => (
-                        <Slide direction="up" triggerOnce>
+                        <Slide direction="up" triggerOnce key={b.id}>
                             <div className="flex justify-between items-center px-[21px] py-[18px] smd:px-[10px] smd:py-[10px] rounded-[20px] shadow-lg duration-500 hover:shadow-xl">
                                 <div className="flex items-center justify-between w-[50%] md:w-[70%] smd:w-[80%] sm:w-[90%]">
                                     <Link href={'/shop/' + b.id}>
